@@ -18,8 +18,8 @@ public class ReduceSideJoin {
         job.setJobName("ReduceSide join");
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FlightsJoinMapper.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportsJoinMapper.class);
-        
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+
+        FileOutputFormat.setOutputPath(job, new Path(args[2]));
         job.setMapperClass(WordMapper.class);
         job.setReducerClass(WordReducer.class);
         job.setOutputKeyClass(Text.class);
