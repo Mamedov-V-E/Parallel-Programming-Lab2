@@ -5,7 +5,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 
 public class TextPair implements WritableComparable<TextPair> {
-    private IntWritable 
+    private IntWritable AirportId
 
     public int compareTo(TextPair pair) {
 
