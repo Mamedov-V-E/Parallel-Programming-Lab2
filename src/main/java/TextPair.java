@@ -16,7 +16,8 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public TextPair(IntWritable airportId, BooleanWritable dataIdentifier) {
-        this.airportId = airportId
+        this.airportId = airportId;
+        this.dataIdentifier = dataIdentifier;
     }
 
     public IntWritable getAirportId() {
