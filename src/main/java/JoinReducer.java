@@ -10,7 +10,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws
             IOException, InterruptedException {
-        Ite
+        Iterator<Text>
         Text airportName = new Text(iter.next())
         for (IntWritable value : values) {
             counter++;
