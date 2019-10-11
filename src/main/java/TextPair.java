@@ -5,6 +5,7 @@ import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
+import java.io.IOException;
 
 public class TextPair implements WritableComparable<TextPair> {
     private IntWritable airportId;
@@ -44,12 +45,12 @@ public class TextPair implements WritableComparable<TextPair> {
         return this.airportId.toString() + this.dataIdentifier.toString();
     }
 
-    public void readFields(DataInput in) {
+    public void readFields(DataInput in) throws IOException {
         airportId.readFields(in);
-
+        dataIdentifier.readFields(in);
     }
 
-    public void write(DataOutput out) {
-
+    public void write(DataOutput out) throws IOException {
+        air
     }
 }
