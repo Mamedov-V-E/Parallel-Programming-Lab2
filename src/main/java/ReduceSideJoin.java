@@ -10,7 +10,7 @@ import org.apache.hadoop.yarn.webapp.view.TextPage;
 
 public class ReduceSideJoin {
     public static void main(String[] args) throws Exception {
-        if (args.length != 2) {
+        if (args.length != 3) {
             System.err.println("Usage: WordCountApp <input path> <output path>");
             System.exit(-1);
         }
@@ -21,7 +21,7 @@ public class ReduceSideJoin {
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportsJoinMapper.class);
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
-        job.setPartitionerClass(TextPair.FirstPartitioner.class);
+        job.setPartitionerClass(TextPair.HashPartitioner.class);
         job.setReducerClass(JoinReducer.class);
 
         job.setOutputKeyClass(Text.class);
