@@ -45,7 +45,8 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public void readFields(DataInput in) {
-        airportId.write();
+        airportId.readFields(in);
+
     }
 
     public void write(DataOutput out) {
