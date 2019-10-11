@@ -10,7 +10,7 @@ public class TextPair implements WritableComparable<TextPair> {
     private IntWritable airportId;
     private BooleanWritable dataSet;
 
-    
+    public IntWritable G
 
     public int compareTo(TextPair pair) {
 
