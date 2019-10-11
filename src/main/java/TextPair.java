@@ -8,7 +8,7 @@ import java.io.DataOutput;
 
 public class TextPair implements WritableComparable<TextPair> {
     private IntWritable airportId;
-    private BooleanWritable dataSet;
+    private BooleanWritable dataIdentifier;
 
     public IntWritable getAirportId() {
         return this.airportId;
