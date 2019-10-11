@@ -54,6 +54,6 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public class HashPartitioner<TextPair, Text> extends Partitioner<TextPair, Text> {
-        public 
+        public int getPartition(TextPair )
     }
 }
