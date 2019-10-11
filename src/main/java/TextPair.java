@@ -51,6 +51,7 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public void write(DataOutput out) throws IOException {
-        air
+        airportId.write(out);
+        dataIdentifier.write(out);
     }
 }
