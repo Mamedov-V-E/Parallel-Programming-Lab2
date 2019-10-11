@@ -37,7 +37,11 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public int compareTo(TextPair pair) {
-        
+        return this.toString().compareTo(pair.toString());
+    }
+
+    public String toString() {
+        return this.airportId.toString() + this.dataIdentifier.toString();
     }
 
     public void readFields(DataInput in) {
