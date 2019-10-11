@@ -13,7 +13,7 @@ public class ReduceSideJoin {
         }
         Job job = Job.getInstance();
         job.setJarByClass(ReduceSideJoin.class);
-        job.setJobName("Word count");
+        job.setJobName("ReduceSide join");
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
         job.setMapperClass(WordMapper.class);
