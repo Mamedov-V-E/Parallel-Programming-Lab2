@@ -59,7 +59,7 @@ public class TextPair implements WritableComparable<TextPair> {
         }
     }
 
-    public class TextPairComparator extends WritableComparator {
+    public static class TextPairComparator extends WritableComparator {
         public int compare(WritableComparable a, WritableComparable b) {
             return a.compareTo(b);
         }
