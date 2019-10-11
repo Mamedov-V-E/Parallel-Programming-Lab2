@@ -61,7 +61,7 @@ public class TextPair implements WritableComparable<TextPair> {
 
     public static class Comparator implements RawComparator {
         public int compare(WritableComparable a, WritableComparable b) {
-            
+            return a.compareTo(b);
         }
     }
 }
