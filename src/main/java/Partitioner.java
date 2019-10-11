@@ -1,4 +1,1 @@
-package PACKAGE_NAME;
-
-public class Partitioner {
-}
+public class Partitioner<TextPair, Text> extends Partitioner<TextPair, Text>
