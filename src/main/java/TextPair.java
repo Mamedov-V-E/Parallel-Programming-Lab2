@@ -5,7 +5,9 @@ import java.io.DataOutput;
 
 public class TextPair implements WritableComparable<TextPair> {
 
-    public void compareTo(TextPair)
+    public int compareTo(TextPair pair) {
+        
+    }
 
     public void readFields(DataInput in) {
 
