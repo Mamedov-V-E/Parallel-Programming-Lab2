@@ -10,6 +10,15 @@ public class TextPair implements WritableComparable<TextPair> {
     private IntWritable airportId;
     private BooleanWritable dataIdentifier;
 
+    public TextPair() {
+        this.airportId = new IntWritable(0);
+        this.dataIdentifier = new BooleanWritable(0);
+    }
+
+    public TextPair(IntWritable airportId, BooleanWritable dataIdentifier) {
+        this.airportId = airportId
+    }
+
     public IntWritable getAirportId() {
         return this.airportId;
     }
