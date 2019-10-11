@@ -22,6 +22,7 @@ public class ReduceSideJoin {
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
         job.setMapperClass(WordMapper.class);
         job.setReducerClass(WordReducer.class);
+        
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         job.setNumReduceTasks(2);
