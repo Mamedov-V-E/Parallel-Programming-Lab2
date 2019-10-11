@@ -12,8 +12,8 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text airportName = new Text(iter.next());
-        for (IntWritable value : values) {
-            counter++;
+        while (iter.hasNext()) {
+            
         }
 
         context.write(key, new LongWritable(counter));
