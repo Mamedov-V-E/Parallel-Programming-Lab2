@@ -1,4 +1,5 @@
 import org.apache.hadoop.io.*;
+import org.apache.hadoop.mapreduce.Partitioner;
 
 import java.io.DataInput;
 import java.io.DataOutput;
@@ -53,6 +54,6 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public class HashPartitioner<TextPair, Text> extends Partitioner<TextPair, Text> {
-
+        public 
     }
 }
