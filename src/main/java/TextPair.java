@@ -45,7 +45,7 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public void readFields(DataInput in) {
-
+        
     }
 
     public void write(DataOutput out) {
