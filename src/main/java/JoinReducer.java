@@ -28,7 +28,8 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             }
             counter++;
         }
-        
-        context.write(, new LongWritable(counter));
+        if (counter != 0) {
+            context.write(, new LongWritable(counter));
+        }
     }
 }
