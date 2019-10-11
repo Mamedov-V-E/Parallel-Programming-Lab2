@@ -6,7 +6,7 @@ import java.io.DataOutput;
 public class FlightsLogWritable implements Writable {
 
     public void readFields(DataInput in) {
-        
+
     }
 
     public void write(DataOutput out) {
