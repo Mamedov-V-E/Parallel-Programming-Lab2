@@ -8,10 +8,10 @@ import java.util.Iterator;
 
 public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     @Override
-    protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws
+    protected void reduce(TextPair key, Iterable<Text> values, Context context) throws
             IOException, InterruptedException {
-        Iterator<Text> iter = 
-        Text airportName = new Text(iter.next())
+        Iterator<Text> iter = values.iterator();
+        Text airportName = new Text(iter.next());
         for (IntWritable value : values) {
             counter++;
         }
