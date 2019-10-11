@@ -8,14 +8,14 @@ import java.io.DataOutput;
 
 public class TextPair implements WritableComparable<TextPair> {
     private IntWritable airportId;
-    private BooleanWritable dataIdentifier;
+    private ByteWritable dataIdentifier;
 
     public TextPair() {
         this.airportId = new IntWritable(0);
-        this.dataIdentifier = new BooleanWritable(0);
+        this.dataIdentifier = new ByteWritable((byte)0);
     }
 
-    public TextPair(IntWritable airportId, BooleanWritable dataIdentifier) {
+    public TextPair(IntWritable airportId, ByteWritable dataIdentifier) {
         this.airportId = airportId;
         this.dataIdentifier = dataIdentifier;
     }
@@ -24,7 +24,7 @@ public class TextPair implements WritableComparable<TextPair> {
         return this.airportId;
     }
 
-    public BooleanWritable getDataIdentifier() {
+    public ByteWritable getDataIdentifier() {
         return this.dataIdentifier;
     }
 
@@ -32,7 +32,7 @@ public class TextPair implements WritableComparable<TextPair> {
         this.airportId = airportId;
     }
 
-    public void setDataIdentifier(BooleanWritable dataIdentifier) {
+    public void setDataIdentifier(ByteWritable dataIdentifier) {
         this.dataIdentifier = dataIdentifier;
     }
 
