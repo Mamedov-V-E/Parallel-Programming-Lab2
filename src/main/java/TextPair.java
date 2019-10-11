@@ -58,4 +58,6 @@ public class TextPair implements WritableComparable<TextPair> {
             return (((TextPair)key).getAirportId().hashCode() & Integer.MAX_VALUE) % numReduceTasks;
         }
     }
+
+    
 }
