@@ -14,7 +14,9 @@ public class TextPair implements WritableComparable<TextPair> {
         return this.airportId;
     }
 
-    public void setAirportId()
+    public void setAirportId(IntWritable airportId) {
+        
+    }
 
     public int compareTo(TextPair pair) {
 
