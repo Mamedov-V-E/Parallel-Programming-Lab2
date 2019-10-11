@@ -13,16 +13,22 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         Iterator<Text> iter = values.iterator();
         Text outValue = new Text(iter.next());
 
-        long min = Long.MIN_VALUE;
-        long max = Long.MAX_VALUE;
-        long average = 0;
+        long min = Long.MAX_VALUE;
+        long max = Long.MIN_VALUE;
+        double average = 0;
         long counter = 0;
         while (iter.hasNext()) {
+            long delay = Long.parseLong(iter.next().toString());
+            if (delay > max) { max = delay; }
+            if (delay < min) { min = delay; }
+            if (counter == 0) {
+                average = delay;
+            } else {
+                average *= (double)counter/(counter+1);
+            }
             counter++;
-            long delay = new IntWritable(Integer.parseInt(iter.next().toString()));
-            if (delay > max) {max = delay}
         }
-
+        
         context.write(, new LongWritable(counter));
     }
 }
