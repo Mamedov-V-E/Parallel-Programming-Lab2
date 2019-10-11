@@ -52,5 +52,5 @@ public class TextPair implements WritableComparable<TextPair> {
         dataIdentifier.write(out);
     }
 
-    
+    public class Partitioner<TextPair, Text> extends Partitioner<TextPair, Text>
 }
