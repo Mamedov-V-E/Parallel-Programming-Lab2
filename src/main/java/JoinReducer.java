@@ -19,8 +19,8 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         long counter = 0;
         while (iter.hasNext()) {
             counter++;
-            IntWritable delay = new IntWritable(Integer.parseInt(iter.next().toString()));
-
+            long delay = new IntWritable(Integer.parseInt(iter.next().toString()));
+            if (delay > max) {max = delay}
         }
 
         context.write(, new LongWritable(counter));
