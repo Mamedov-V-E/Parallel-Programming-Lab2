@@ -14,20 +14,20 @@ public class TextPair implements WritableComparable<TextPair> {
         return this.airportId;
     }
 
-    public BooleanWritable getDataSet() {
-        return this.dataSet;
+    public BooleanWritable getDataIdentifier() {
+        return this.dataIdentifier;
     }
 
     public void setAirportId(IntWritable airportId) {
         this.airportId = airportId;
     }
 
-    public void setDataSet(IntWritable airportId) {
-        this.airportId = airportId;
+    public void setDataIdentifier(BooleanWritable dataIdentifier) {
+        this.dataIdentifier = dataIdentifier;
     }
 
     public int compareTo(TextPair pair) {
-
+        
     }
 
     public void readFields(DataInput in) {
