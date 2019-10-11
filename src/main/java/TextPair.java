@@ -51,4 +51,6 @@ public class TextPair implements WritableComparable<TextPair> {
         airportId.write(out);
         dataIdentifier.write(out);
     }
+
+    
 }
