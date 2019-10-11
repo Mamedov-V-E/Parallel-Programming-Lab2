@@ -6,6 +6,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.hadoop.yarn.webapp.view.TextPage;
 
 public class ReduceSideJoin {
     public static void main(String[] args) throws Exception {
@@ -20,6 +21,7 @@ public class ReduceSideJoin {
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportsJoinMapper.class);
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
+        job.setPartitionerClass(TextPair.FirstPartitioner.class);
         job.setReducerClass(JoinReducer.class);
 
         job.setOutputKeyClass(Text.class);
