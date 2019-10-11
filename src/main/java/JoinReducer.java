@@ -14,9 +14,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         Text airportName = new Text(iter.next());
         while (iter.hasNext()) {
             IntWritable delay = new IntWritable(Integer.parseInt(iter.next().toString()));
-            
+            context.write(key, new LongWritable(counter));
         }
-
-        context.write(key, new LongWritable(counter));
     }
 }
