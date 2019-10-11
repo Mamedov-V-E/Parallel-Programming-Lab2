@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
+import org.apache.hadoop.io.WritableComparable;
 
-public class TextPair {
+public class TextPair implements WritableComparable {
 }
