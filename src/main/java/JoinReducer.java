@@ -11,7 +11,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws
             IOException, InterruptedException {
 
-        Text airportName = 
+        Text airportName = new Tex
         for (IntWritable value : values) {
             counter++;
         }
