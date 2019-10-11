@@ -53,9 +53,9 @@ public class TextPair implements WritableComparable<TextPair> {
         dataIdentifier.write(out);
     }
 
-    public class HashPartitioner<K, V> extends Partitioner<K, V> {
+    public static class HashPartitioner<K, V> extends Partitioner<K, V> {
         public int getPartition(K key, V value, int numReduceTasks) {
-            return (((K)(((TextPair)key).getAirportId())).hashCode() & Integer.MAX_VALUE) % numReduceTasks;
+            return (((TextPair)key).getAirportId().hashCode() & Integer.MAX_VALUE) % numReduceTasks;
         }
     }
 }
