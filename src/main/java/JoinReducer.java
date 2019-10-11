@@ -18,6 +18,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         IntWritable average = new IntWritable(0);
         IntWritable counter = new IntWritable(0);
         while (iter.hasNext()) {
+            counter++;
             IntWritable delay = new IntWritable(Integer.parseInt(iter.next().toString()));
 
         }
