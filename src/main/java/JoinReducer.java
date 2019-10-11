@@ -13,10 +13,10 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         Iterator<Text> iter = values.iterator();
         Text outValue = new Text(iter.next());
 
-        int min = new IntWritable(Integer.MAX_VALUE);
-        int max = new IntWritable(Integer.MIN_VALUE);
-        int average = new IntWritable(0);
-        int counter = new IntWritable(0);
+        long min = Long.MIN_VALUE;
+        long max = Long.MAX_VALUE;
+        long average = 0;
+        long counter = 0;
         while (iter.hasNext()) {
             counter++;
             IntWritable delay = new IntWritable(Integer.parseInt(iter.next().toString()));
