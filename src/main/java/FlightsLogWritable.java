@@ -1,3 +1,3 @@
-public class FlightsLogWritable {
-    
+public class FlightsLogWritable implements {
+
 }
