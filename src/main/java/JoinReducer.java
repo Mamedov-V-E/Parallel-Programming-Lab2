@@ -6,12 +6,12 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
+public class JoinReducer extends Reducer<TextPair, Text, , Text> {
     @Override
     protected void reduce(TextPair key, Iterable<Text> values, Context context) throws
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
-        Text outValue = new Text(iter.next());
+        Text airportName = new Text(iter.next());
 
         long min = Long.MAX_VALUE;
         long max = Long.MIN_VALUE;
@@ -29,7 +29,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             counter++;
         }
         if (counter != 0) {
-            context.write(, new LongWritable(counter));
+            context.write(key.getAirportId(), new Text(counter));
         }
     }
 }
