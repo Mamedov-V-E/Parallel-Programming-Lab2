@@ -1,3 +1,5 @@
+package ParallelProgrammingLab2;
+
 import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapreduce.Partitioner;
 
