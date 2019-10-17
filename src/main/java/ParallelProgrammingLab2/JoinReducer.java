@@ -25,7 +25,7 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
             if (counter == 0) {
                 average = delay;
             } else {
-                average *= (double)counter/(counter+1);
+                average = (average + delay) * (double)counter/(counter+1);
             }
             counter++;
         }
