@@ -9,6 +9,6 @@ public class ParseUtils {
 
     static String ParseAirportsListLine (String line) {
         String[] parameters = line.split("\",\"");
-        String[] output = {parameters[14]};
+        String[] output = {parameters[14], parameters[]};
     }
 }
