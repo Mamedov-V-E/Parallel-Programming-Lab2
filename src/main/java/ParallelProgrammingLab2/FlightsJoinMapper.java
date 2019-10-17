@@ -1,4 +1,8 @@
 package ParallelProgrammingLab2;
 
-public class FlightsJoinMapper {
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> {
 }
