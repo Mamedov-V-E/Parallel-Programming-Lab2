@@ -22,7 +22,7 @@ public class ReduceSideJoin {
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
         job.setPartitionerClass(HashPartitioner.class);
-        job.setGroupingComparatorClass(TextPair.TextPairComparator.class);
+        job.setGroupingComparatorClass(TextPairComparator.class);
         job.setReducerClass(JoinReducer.class);
 
         job.setOutputKeyClass(Text.class);
