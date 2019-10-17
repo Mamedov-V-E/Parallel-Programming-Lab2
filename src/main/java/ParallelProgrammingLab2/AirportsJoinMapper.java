@@ -10,7 +10,7 @@ public class AirportsJoinMapper extends Mapper<LongWritable, Text, TextPair, Tex
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] parsedAirportsListLine = ParseUtils.ParseAirportsListLine(value.toString());
-        context.write(new TextPair(call.getSystemA().toString(),"0"),
+        context.write(new TextPair(parsedAirportsListLine[0],"0"),
                 new Text(call.toString()));
     }
 }
