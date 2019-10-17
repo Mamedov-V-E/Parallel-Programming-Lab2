@@ -22,11 +22,12 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
             long delay = Long.parseLong(iter.next().toString());
             if (delay > max) { max = delay; }
             if (delay < min) { min = delay; }
-            if (counter == 0) {
-                average = delay;
-            } else {
-                average = (average + delay) * (double)counter/(counter+1);
-            }
+            average = (average * counter + delay) / (counter+1);
+//            if (counter == 0) {
+//                average = delay;
+//            } else {
+//                average = (average * counter + delay) / (counter+1);
+//            }
             counter++;
         }
         if (counter != 0) {
