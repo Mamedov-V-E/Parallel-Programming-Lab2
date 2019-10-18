@@ -34,8 +34,8 @@ public class TextPairComparator extends WritableComparator {
         return i1.compareTo(i2);
     }
 
-    @Override
-    public int compare(WritableComparable a, WritableComparable b) {
-        return a.compareTo(b);
-    }
+//    @Override
+//    public int compare(WritableComparable a, WritableComparable b) {
+//        return a.compareTo(b);
+//    }
 }
