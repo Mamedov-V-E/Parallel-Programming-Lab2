@@ -14,7 +14,7 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
         String[] parsedFlightsLogLine = ParseUtils.ParseFlightsLogLine(value.toString());
         if (key.get() > 1) {
             TextPair outKey = new TextPair(
-                    new IntWritable(Integer.parseInt(parsedFlightsLogLine[0])), new ByteWritable((byte)1));
+                    Integer.parseInt(parsedFlightsLogLine[0]), (byte)1);
             if (Double.parseDouble(parsedFlightsLogLine[1]) > 0) {
                 context.write(outKey, new Text(parsedFlightsLogLine[1]));
             }

@@ -31,7 +31,7 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
             counter++;
         }
         if (counter != 0) {
-            context.write(key.getAirportId(), new Text(airportName + "\t" + min + "\t" + max + "\t" + average));
+            context.write(new IntWritable(key.getAirportId()), new Text(airportName + "\t" + min + "\t" + max + "\t" + average));
         }
     }
 }

@@ -14,7 +14,7 @@ public class AirportsJoinMapper extends Mapper<LongWritable, Text, TextPair, Tex
         String[] parsedAirportsListLine = ParseUtils.ParseAirportsListLine(value.toString());
         if (key.get() > 1) {
             TextPair outKey = new TextPair(
-                    new IntWritable(Integer.parseInt(parsedAirportsListLine[0])), new ByteWritable((byte)0));
+                    Integer.parseInt(parsedAirportsListLine[0]), (byte)0);
             context.write(outKey, new Text(parsedAirportsListLine[1]));
         }
     }
