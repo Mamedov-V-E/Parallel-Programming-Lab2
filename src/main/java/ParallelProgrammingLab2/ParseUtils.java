@@ -9,16 +9,16 @@ public class ParseUtils {
 
     static String[] ParseFlightsLogLine (String line) {
         String[] parameters = line.split(",");
-        for (String p : parameters) {
-            p = p.replaceAll("\"", "");
+        for (int i = 0; i < parameters.length; ++i) {
+            parameters[i] = parameters[i].replaceAll("\"", "");
         }
         return new String[] {parameters[FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER], parameters[FLIGHTS_LOG_DELAY_PARAM_NUMBER]};
     }
 
     static String[] ParseAirportsListLine (String line) {
         String[] parameters = line.split("\",\"");
-        for (String p : parameters) {
-            p = p.replaceAll("\"", "");
+        for (int i = 0; i < parameters.length; ++i) {
+            parameters[i] = parameters[i].replaceAll("\"", "");
         }
         return parameters;
     }
