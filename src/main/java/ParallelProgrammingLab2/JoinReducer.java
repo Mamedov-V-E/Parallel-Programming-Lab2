@@ -17,14 +17,17 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
         double min = Long.MAX_VALUE;
         double max = Long.MIN_VALUE;
         double average = 0;
+        double sum = 0;
         long counter = 0;
         while (iter.hasNext()) {
             double delay = Double.parseDouble(iter.next().toString());
             if (delay > max) { max = delay; }
             if (delay < min) { min = delay; }
-            average = (average * counter + delay) / (counter+1);
+            //average = (average * counter + delay) / (counter+1);
+            sum += delay;
             counter++;
         }
+        average = sum / counter;
         if (counter != 0) {
             context.write(new IntWritable(key.getAirportId()), new Text(airportName + "\t" + min + "\t" + max + "\t" + average));
         }
