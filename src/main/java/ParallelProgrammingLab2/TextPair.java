@@ -37,19 +37,23 @@ public class TextPair implements WritableComparable<TextPair> {
         this.dataIdentifier = dataIdentifier;
     }
 
+    @Override
     public int compareTo(TextPair pair) {
         return this.toString().compareTo(pair.toString());
     }
 
+    @Override
     public String toString() {
         return this.airportId.toString() + this.dataIdentifier.toString();
     }
 
+    @Override
     public void readFields(DataInput in) throws IOException {
         this.airportId = in.readInt();
         this.dataIdentifier = in.readByte();
     }
 
+    @Override
     public void write(DataOutput out) throws IOException {
         out.writeInt(this.airportId);
         out.writeByte(this.dataIdentifier);
