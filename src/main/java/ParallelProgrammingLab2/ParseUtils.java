@@ -8,27 +8,26 @@ public class ParseUtils {
 //    public static final String AIRPORTS_AIRPORT_ID_COLUMN_NAME = "Code";
 
     static String[] ParseFlightsLogLine (String line) {
-        String[] parameters = ParseCSVLine(line);
-//        if (parameters[FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER].equals(FLIGHTS_LOG_AIRPORT_ID_COLUMN_NAME)) {
-//            return new String[] {};
-//        }
-        //String[] output = {parameters[13], parameters[17]};
+        String[] parameters = line.split(",");
+        for (String p : parameters) {
+            p = p.replaceAll("\"", "");
+        }
         return new String[] {parameters[FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER], parameters[FLIGHTS_LOG_DELAY_PARAM_NUMBER]};
     }
 
     static String[] ParseAirportsListLine (String line) {
-        String[] parameters = ParseCSVLine(line);
-//        if (parameters[0].equals(AIRPORTS_AIRPORT_ID_COLUMN_NAME)) {
-//            return new String[] {};
-//        }
-        return parameters;
-    }
-
-    private static String[] ParseCSVLine(String line) {
-        String[] parameters = line.split(",");
+        String[] parameters = line.split("\",\"");
         for (String p : parameters) {
-            p.replaceAll("\"", "");
+            p = p.replaceAll("\"", "");
         }
         return parameters;
     }
+
+//    private static String[] ParseCSVLine(String line) {
+//        String[] parameters = line.split(",");
+//        for (String p : parameters) {
+//            p = p.replaceAll("\"", "");
+//        }
+//        return parameters;
+//    }
 }
