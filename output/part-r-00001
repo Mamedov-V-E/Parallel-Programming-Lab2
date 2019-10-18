@@ -1,160 +1,150 @@
-10135	Allentown/Bethlehem/Easton, PA: Lehigh Valley International	11.0	23.0	15.4
-10141	Aberdeen, SD: Aberdeen Regional	4.0	22.0	13.0
-10155	Waco, TX: Waco Regional	4.0	74.0	26.22222222222222
-10157	Arcata/Eureka, CA: Arcata	11.0	96.0	64.66666666666667
-10185	Alexandria, LA: Alexandria International	1.0	55.0	15.625
-10257	Albany, NY: Albany International	1.0	241.0	32.92857142857143
-10279	Amarillo, TX: Rick Husband Amarillo International	1.0	95.0	32.31818181818182
-10299	Anchorage, AK: Ted Stevens Anchorage International	1.0	375.0	39.58064516129032
-10397	Atlanta, GA: Hartsfield-Jackson Atlanta International	1.0	653.0	33.398870056497174
-10423	Austin, TX: Austin - Bergstrom International	1.0	340.0	29.623376623376622
-10431	Asheville, NC: Asheville Regional	1.0	152.0	40.333333333333336
-10469	Kalamazoo, MI: Kalamazoo/Battle Creek International	1.0	122.0	54.625
-10529	Hartford, CT: Bradley International	1.0	293.0	32.93333333333333
-10551	Bethel, AK: Bethel Airport	9.0	9.0	9.0
-10561	Bakersfield, CA: Meadows Field	3.0	141.0	43.92307692307692
-10599	Birmingham, AL: Birmingham-Shuttlesworth International	1.0	154.0	30.818181818181817
-10627	Bismarck/Mandan, ND: Bismarck Municipal	2.0	272.0	44.4
-10631	Bemidji, MN: Bemidji Regional	2.0	4.0	3.0
-10685	Bloomington/Normal, IL: Central Illinois Regional	3.0	241.0	51.833333333333336
-10693	Nashville, TN: Nashville International	1.0	391.0	31.838926174496645
-10713	Boise, ID: Boise Air Terminal	1.0	122.0	27.879310344827587
-10721	Boston, MA: Logan International	1.0	292.0	34.47126436781609
-10731	Brunswick, GA: Brunswick Golden Isles	1.0	187.0	94.0
-10739	Brainerd, MN: Brainerd Lakes Regional	6.0	6.0	6.0
-10747	Brownsville, TX: Brownsville South Padre Island International	6.0	51.0	22.5
-10779	Butte, MT: Bert Mooney	9.0	12.0	10.5
-10781	Baton Rouge, LA: Baton Rouge Metropolitan/Ryan Field	1.0	200.0	41.64
-10785	Burlington, VT: Burlington International	2.0	144.0	55.55555555555556
-10821	Baltimore, MD: Baltimore/Washington International Thurgood Marshall	1.0	475.0	30.637037037037036
-10849	Bozeman, MT: Bozeman Yellowstone International	1.0	214.0	53.72727272727273
-11003	Cedar Rapids/Iowa City, IA: The Eastern Iowa	3.0	206.0	44.888888888888886
-11013	Sault Ste. Marie, MI: Chippewa County International	3.0	123.0	45.666666666666664
-11041	Carlsbad, CA: McClellan-Palomar	1.0	24.0	12.0
-11049	College Station/Bryan, TX: Easterwood Field	1.0	40.0	16.363636363636363
-11057	Charlotte, NC: Charlotte Douglas International	1.0	263.0	25.709141274238227
-11067	Champaign/Urbana, IL: University of Illinois/Willard	1.0	129.0	41.0
-11097	Cody, WY: Yellowstone Regional	1.0	25.0	9.333333333333334
-11109	Colorado Springs, CO: City of Colorado Springs Municipal	3.0	224.0	45.05263157894737
-11111	Columbia, MO: Columbia Regional	3.0	380.0	117.5
-11193	Cincinnati, OH: Cincinnati/Northern Kentucky International	1.0	179.0	32.06172839506173
-11203	Mosinee, WI: Central Wisconsin	2.0	150.0	50.166666666666664
-11259	Dallas, TX: Dallas Love Field	1.0	278.0	27.52910052910053
-11267	Dayton, OH: James M Cox/Dayton International	2.0	218.0	29.448275862068964
-11315	Dickinson, ND: Dickinson - Theodore Roosevelt Regional	5.0	175.0	55.25
-11337	Duluth, MN: Duluth International	2.0	177.0	69.0
-11413	Durango, CO: Durango La Plata County	4.0	122.0	34.285714285714285
-11423	Des Moines, IA: Des Moines International	1.0	167.0	34.45238095238095
-11433	Detroit, MI: Detroit Metro Wayne County	1.0	514.0	34.87155963302752
-11447	Devils Lake, ND: Devils Lake Regional	13.0	114.0	63.5
-11471	Eau Claire, WI: Chippewa Valley Regional	3.0	264.0	110.75
-11481	Panama City, FL: Northwest Florida Beaches International	2.0	31.0	12.25
-11503	Eagle, CO: Eagle County Regional	1.0	124.0	42.666666666666664
-11525	Elko, NV: Elko Regional	10.0	59.0	26.666666666666668
-11537	Elmira/Corning, NY: Elmira/Corning Regional	1.0	64.0	31.77777777777778
-11577	Erie, PA: Erie International/Tom Ridge Field	3.0	70.0	23.2
-11587	Escanaba, MI: Delta County	35.0	245.0	140.0
-11603	Eugene, OR: Mahlon Sweet Field	3.0	94.0	24.736842105263158
-11637	Fargo, ND: Hector International	1.0	127.0	28.48148148148148
-11641	Fayetteville, NC: Fayetteville Regional/Grannis Field	4.0	41.0	16.0
-11695	Flagstaff, AZ: Flagstaff Pulliam	3.0	112.0	47.0
-11697	Fort Lauderdale, FL: Fort Lauderdale-Hollywood International	1.0	269.0	32.903225806451616
-11721	Flint, MI: Bishop International	1.0	171.0	46.142857142857146
-11775	Sioux Falls, SD: Joe Foss Field	1.0	165.0	42.28125
-11823	Fort Wayne, IN: Fort Wayne International	7.0	129.0	38.45454545454545
-11865	Gillette, WY: Gillette Campbell County	8.0	56.0	30.2
-11867	Garden City, KS: Garden City Regional	22.0	22.0	22.0
-11905	Longview, TX: East Texas Regional	12.0	92.0	48.666666666666664
-11921	Grand Junction, CO: Grand Junction Regional	1.0	39.0	12.75
-11953	Gainesville, FL: Gainesville Regional	2.0	86.0	16.3
-11973	Gulfport/Biloxi, MS: Gulfport-Biloxi International	2.0	113.0	33.416666666666664
-11977	Green Bay, WI: Austin Straubel International	1.0	113.0	25.695652173913043
-11995	Greensboro/High Point, NC: Piedmont Triad International	1.0	307.0	35.29032258064516
-12003	Great Falls, MT: Great Falls International	1.0	89.0	25.5
-12007	Columbus, MS: Golden Triangle Regional	11.0	42.0	26.5
-12129	Hibbing, MN: Range Regional	1.0	51.0	22.25
-12173	Honolulu, HI: Honolulu International	1.0	1013.0	25.0
-12177	Hobbs, NM: Lea County Regional	2.0	73.0	26.666666666666668
-12191	Houston, TX: William P Hobby	1.0	171.0	25.875
-12197	White Plains, NY: Westchester County	1.0	233.0	40.892857142857146
-12217	Huntsville, AL: Huntsville International-Carl T Jones Field	1.0	159.0	46.45
-12255	Hays, KS: Hays Regional	13.0	15.0	14.0
-12265	Niagara Falls, NY: Niagara Falls International	26.0	38.0	32.0
-12323	Wilmington, NC: Wilmington International	95.0	95.0	95.0
-12335	Iron Mountain/Kingsfd, MI: Ford	69.0	114.0	91.5
-12339	Indianapolis, IN: Indianapolis International	1.0	262.0	30.11340206185567
-12343	International Falls, MN: Falls International Einarson Field	33.0	33.0	33.0
-12389	Williston, ND: Sloulin Field International	2.0	89.0	30.0
-12391	Islip, NY: Long Island MacArthur	1.0	240.0	42.07142857142857
-12441	Jackson, WY: Jackson Hole	1.0	320.0	39.34782608695652
-12451	Jacksonville, FL: Jacksonville International	1.0	142.0	31.735849056603772
-12511	Joplin, MO: Joplin Regional	12.0	47.0	30.333333333333332
-12519	Jamestown, ND: Jamestown Regional	5.0	104.0	55.0
-12523	Juneau, AK: Juneau International	1.0	51.0	12.6
-12819	Ketchikan, AK: Ketchikan International	4.0	43.0	18.1
-12889	Las Vegas, NV: McCarran International	1.0	251.0	29.983425414364643
-12891	Lawton/Fort Sill, OK: Lawton-Fort Sill Regional	10.0	45.0	28.2
-12915	Lake Charles, LA: Lake Charles Regional	7.0	43.0	18.0
-12945	Lexington, KY: Blue Grass	1.0	136.0	28.791666666666668
-12951	Lafayette, LA: Lafayette Regional Paul Fournet Field	1.0	92.0	25.142857142857142
-12953	New York, NY: LaGuardia	1.0	331.0	39.10978520286396
-13029	Lincoln, NE: Lincoln Airport	1.0	123.0	37.0
-13061	Laredo, TX: Laredo International	2.0	172.0	33.7
-13241	Meridian, MS: Key Field	11.0	246.0	89.66666666666667
-13277	Montgomery, AL: Montgomery Regional	3.0	60.0	27.666666666666668
-13303	Miami, FL: Miami International	1.0	237.0	30.81362007168459
-13367	Moline, IL: Quad City International	1.0	205.0	46.75
-13377	Monroe, LA: Monroe Regional	7.0	161.0	54.36363636363637
-13433	Minot, ND: Minot International	2.0	61.0	21.428571428571427
-13459	Marquette, MI: Sawyer International	175.0	175.0	175.0
-13485	Madison, WI: Dane County Regional-Truax Field	2.0	251.0	47.1875
-13487	Minneapolis, MN: Minneapolis-St Paul International	1.0	371.0	29.30817610062893
-13495	New Orleans, LA: Louis Armstrong New Orleans International	1.0	199.0	27.72072072072072
-13577	Myrtle Beach, SC: Myrtle Beach International	6.0	104.0	36.111111111111114
-13795	Jacksonville/Camp Lejeune, NC: Albert J Ellis	2.0	33.0	12.2
-13851	Oklahoma City, OK: Will Rogers World	1.0	150.0	34.49152542372882
-13871	Omaha, NE: Eppley Airfield	1.0	140.0	27.482142857142858
-13873	Nome, AK: Nome Airport	8.0	14.0	11.0
-13891	Ontario, CA: Ontario International	1.0	97.0	22.783333333333335
-13931	Norfolk, VA: Norfolk International	1.0	166.0	29.5
-14025	Plattsburgh, NY: Plattsburgh International	9.0	32.0	18.0
-14027	West Palm Beach/Palm Beach, FL: Palm Beach International	1.0	141.0	31.366666666666667
-14057	Portland, OR: Portland International	1.0	185.0	27.457142857142856
-14107	Phoenix, AZ: Phoenix Sky Harbor International	1.0	498.0	30.245689655172413
-14109	Hattiesburg/Laurel, MS: Hattiesburg-Laurel Regional	14.0	14.0	14.0
-14113	Pocatello, ID: Pocatello Regional	2.0	5.0	3.3333333333333335
-14193	Pensacola, FL: Pensacola International	1.0	176.0	25.571428571428573
-14307	Providence, RI: Theodore Francis Green State	1.0	95.0	24.6046511627907
-14321	Portland, ME: Portland International Jetport	1.0	97.0	25.77777777777778
-14457	Rapid City, SD: Rapid City Regional	2.0	108.0	36.142857142857146
-14487	Redding, CA: Redding Municipal	3.0	134.0	47.5
-14489	Bend/Redmond, OR: Roberts Field	2.0	131.0	35.6
-14543	Rock Springs, WY: Rock Springs Sweetwater County	4.0	138.0	51.333333333333336
-14633	Rochester, MN: Rochester International	1.0	179.0	38.1
-14635	Fort Myers, FL: Southwest Florida International	1.0	484.0	38.02040816326531
-14679	San Diego, CA: San Diego International	1.0	267.0	21.138392857142858
-14683	San Antonio, TX: San Antonio International	1.0	391.0	33.53389830508475
-14685	Savannah, GA: Savannah/Hilton Head International	3.0	201.0	32.285714285714285
-14689	Santa Barbara, CA: Santa Barbara Municipal	1.0	152.0	33.111111111111114
-14709	Deadhorse, AK: Deadhorse Airport	3.0	12.0	8.666666666666666
-14711	State College, PA: University Park	3.0	33.0	17.25
-14747	Seattle, WA: Seattle/Tacoma International	1.0	531.0	32.29538461538461
-14771	San Francisco, CA: San Francisco International	1.0	556.0	44.2248243559719
-14783	Springfield, MO: Springfield-Branson National	3.0	223.0	54.59090909090909
-14831	San Jose, CA: Norman Y. Mineta San Jose International	1.0	206.0	27.421875
-14843	San Juan, PR: Luis Munoz Marin International	1.0	209.0	32.08695652173913
-14869	Salt Lake City, UT: Salt Lake City International	1.0	475.0	27.50980392156863
-14893	Sacramento, CA: Sacramento International	1.0	135.0	26.524590163934427
-14905	Santa Maria, CA: Santa Maria Public/Capt. G. Allan Hancock Field	22.0	22.0	22.0
-15027	Christiansted, VI: Henry E. Rohlsen	4.0	12.0	8.0
-15041	Sun Valley/Hailey/Ketchum, ID: Friedman Memorial	13.0	33.0	24.5
-15249	Tallahassee, FL: Tallahassee International	1.0	55.0	17.0
-15295	Toledo, OH: Toledo Express	4.0	40.0	22.6
-15323	Bristol/Johnson City/Kingsport, TN: Tri-Cities Regional TN/VA	1.0	78.0	36.25
-15389	Twin Falls, ID: Joslin Field - Magic Valley Regional	1.0	32.0	12.0
-15401	Texarkana, AR: Texarkana Regional-Webb Field	12.0	12.0	12.0
-15411	Tyler, TX: Tyler Pounds Regional	4.0	149.0	50.2
-15607	Valdosta, GA: Valdosta Regional	20.0	50.0	35.0
-15841	Wrangell, AK: Wrangell Airport	31.0	31.0	31.0
-15919	Fayetteville, AR: Northwest Arkansas Regional	1.0	119.0	32.888888888888886
-15991	Yakutat, AK: Yakutat Airport	3.0	41.0	21.333333333333332
+10135	23.00	11.0	17.0	13.5
+10141	4.00	22.0	22.0	22.0
+10155	9.00	4.0	74.0	28.375
+10157	11.00	87.0	96.0	91.5
+10185	3.00	1.0	55.0	17.428571428571427
+10257	5.00	1.0	241.0	33.96296296296296
+10279	2.00	1.0	95.0	33.76190476190476
+10299	6.00	1.0	375.0	40.7
+10397	7.00	1.0	653.0	33.428733031674206
+10423	77.00	1.0	340.0	29.313725490196077
+10431	2.00	1.0	152.0	48.0
+10469	39.00	1.0	122.0	56.857142857142854
+10529	9.00	1.0	293.0	33.25675675675676
+10561	141.00	3.0	96.0	35.833333333333336
+10599	13.00	1.0	154.0	31.232558139534884
+10627	3.00	2.0	272.0	49.0
+10631	2.00	4.0	4.0	4.0
+10685	5.00	3.0	241.0	56.09090909090909
+10693	37.00	1.0	391.0	31.804054054054053
+10713	2.00	1.0	122.0	28.333333333333332
+10721	24.00	1.0	292.0	34.5014409221902
+10731	1.00	187.0	187.0	187.0
+10747	20.00	6.0	51.0	23.0
+10779	12.00	9.0	9.0	9.0
+10781	5.00	1.0	200.0	43.166666666666664
+10785	61.00	2.0	144.0	54.875
+10821	1.00	1.0	475.0	30.74721189591078
+10849	1.00	2.0	214.0	59.0
+11003	109.00	3.0	206.0	43.05714285714286
+11013	3.00	11.0	123.0	67.0
+11041	4.00	1.0	24.0	13.333333333333334
+11049	21.00	1.0	40.0	15.9
+11057	43.00	1.0	263.0	25.66111111111111
+11067	23.00	1.0	129.0	42.38461538461539
+11097	1.00	2.0	25.0	13.5
+11109	77.00	3.0	224.0	44.189189189189186
+11111	3.00	39.0	380.0	155.66666666666666
+11193	8.00	1.0	179.0	32.3625
+11203	89.00	2.0	150.0	42.4
+11259	43.00	1.0	278.0	27.4468085106383
+11267	3.00	2.0	218.0	30.392857142857142
+11315	29.00	5.0	175.0	64.0
+11337	59.00	2.0	177.0	71.5
+11413	122.00	4.0	40.0	19.666666666666668
+11423	8.00	1.0	167.0	35.09756097560975
+11433	4.00	1.0	514.0	34.966257668711656
+11447	114.00	13.0	13.0	13.0
+11471	164.00	3.0	264.0	93.0
+11481	2.00	4.0	31.0	13.714285714285714
+11503	81.00	1.0	124.0	39.18181818181818
+11525	10.00	11.0	59.0	35.0
+11537	48.00	1.0	64.0	29.75
+11577	34.00	3.0	70.0	20.5
+11587	245.00	35.0	35.0	35.0
+11603	5.00	3.0	94.0	25.833333333333332
+11637	41.00	1.0	127.0	28.0
+11641	9.00	4.0	41.0	18.333333333333332
+11695	18.00	3.0	112.0	54.25
+11697	5.00	1.0	269.0	33.032407407407405
+11721	27.00	1.0	171.0	49.333333333333336
+11775	2.00	1.0	165.0	43.58064516129032
+11823	39.00	7.0	129.0	38.4
+11865	8.00	17.0	56.0	35.75
+11905	42.00	12.0	92.0	52.0
+11921	14.00	1.0	39.0	12.571428571428571
+11953	3.00	2.0	86.0	17.77777777777778
+11973	7.00	2.0	113.0	35.81818181818182
+11977	6.00	1.0	113.0	26.59090909090909
+11995	2.00	1.0	307.0	36.4
+12003	1.00	1.0	89.0	28.22222222222222
+12007	11.00	42.0	42.0	42.0
+12129	19.00	1.0	51.0	23.333333333333332
+12173	15.00	1.0	1013.0	25.053475935828878
+12177	5.00	2.0	73.0	37.5
+12191	15.00	1.0	171.0	25.943396226415093
+12197	74.00	1.0	233.0	39.666666666666664
+12217	7.00	1.0	159.0	48.526315789473685
+12255	15.00	13.0	13.0	13.0
+12265	38.00	26.0	26.0	26.0
+12335	114.00	69.0	69.0	69.0
+12339	68.00	1.0	262.0	29.71875
+12389	52.00	2.0	89.0	28.533333333333335
+12391	36.00	1.0	240.0	42.53846153846154
+12441	18.00	1.0	320.0	40.31818181818182
+12451	118.00	1.0	142.0	30.076923076923077
+12511	12.00	32.0	47.0	39.5
+12519	72.00	5.0	104.0	50.75
+12523	1.00	2.0	51.0	15.5
+12819	18.00	4.0	43.0	18.11111111111111
+12889	4.00	1.0	251.0	30.05540166204986
+12891	39.00	10.0	45.0	25.5
+12915	7.00	7.0	43.0	20.2
+12945	15.00	1.0	136.0	29.391304347826086
+12951	24.00	1.0	92.0	25.2
+12953	15.00	1.0	331.0	39.16746411483253
+13029	3.00	1.0	123.0	41.857142857142854
+13061	32.00	2.0	172.0	33.888888888888886
+13241	246.00	11.0	12.0	11.5
+13277	3.00	11.0	60.0	32.6
+13303	17.00	1.0	237.0	30.863309352517987
+13367	90.00	1.0	205.0	44.473684210526315
+13377	40.00	7.0	161.0	55.8
+13433	61.00	2.0	37.0	14.833333333333334
+13485	227.00	2.0	251.0	41.38709677419355
+13487	16.00	1.0	371.0	29.350157728706623
+13495	4.00	1.0	199.0	27.936363636363637
+13577	8.00	6.0	104.0	39.625
+13795	2.00	2.0	33.0	14.75
+13851	13.00	1.0	150.0	34.86206896551724
+13871	26.00	1.0	140.0	27.509090909090908
+13873	14.00	8.0	8.0	8.0
+13891	18.00	1.0	97.0	22.864406779661017
+13931	8.00	1.0	166.0	30.151515151515152
+14025	32.00	9.0	13.0	11.0
+14027	4.00	1.0	141.0	31.674157303370787
+14057	1.00	1.0	185.0	27.64748201438849
+14107	17.00	1.0	498.0	30.27429805615551
+14113	5.00	2.0	3.0	2.5
+14193	176.00	1.0	169.0	18.05
+14307	29.00	1.0	95.0	24.5
+14321	29.00	1.0	97.0	25.375
+14457	15.00	2.0	108.0	39.666666666666664
+14487	4.00	3.0	134.0	62.0
+14489	8.00	2.0	131.0	38.666666666666664
+14543	138.00	4.0	12.0	8.0
+14633	38.00	1.0	179.0	38.111111111111114
+14635	2.00	1.0	484.0	38.391752577319586
+14679	27.00	1.0	267.0	21.112107623318387
+14683	7.00	1.0	391.0	33.76068376068376
+14685	25.00	3.0	201.0	32.65
+14689	112.00	1.0	152.0	30.076923076923077
+14709	11.00	3.0	12.0	7.5
+14711	3.00	6.0	33.0	22.0
+14747	4.00	1.0	531.0	32.382716049382715
+14771	38.00	1.0	556.0	44.23943661971831
+14783	23.00	3.0	223.0	56.095238095238095
+14831	1.00	1.0	206.0	27.62992125984252
+14843	5.00	1.0	209.0	32.38461538461539
+14869	6.00	1.0	475.0	27.594488188976378
+14893	18.00	1.0	135.0	26.59504132231405
+15027	12.00	4.0	4.0	4.0
+15041	13.00	25.0	33.0	28.333333333333332
+15249	10.00	1.0	55.0	17.77777777777778
+15295	37.00	4.0	40.0	19.0
+15323	56.00	1.0	78.0	29.666666666666668
+15389	18.00	1.0	32.0	10.8
+15411	4.00	6.0	149.0	55.333333333333336
+15607	20.00	50.0	50.0	50.0
+15919	17.00	1.0	119.0	33.34285714285714
+15991	20.00	3.0	41.0	22.0
