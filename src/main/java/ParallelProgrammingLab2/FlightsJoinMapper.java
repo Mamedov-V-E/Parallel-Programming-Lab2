@@ -12,7 +12,7 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] parsedFlightsLogLine = ParseUtils.ParseFlightsLogLine(value.toString());
-        if (parsedFlightsLogLine.length != 1) {
+        if (parsedFlightsLogLine.length > 0) {
             TextPair outKey = new TextPair(
                     new IntWritable(Integer.parseInt(parsedFlightsLogLine[0])), new ByteWritable((byte)1));
             if (Long.parseLong(parsedFlightsLogLine[1]) > 0) {
