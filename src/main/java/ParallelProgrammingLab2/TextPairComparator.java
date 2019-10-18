@@ -2,6 +2,7 @@ package ParallelProgrammingLab2;
 
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
+import org
 
 public class TextPairComparator extends Generator.HashComparator {
     @Override
