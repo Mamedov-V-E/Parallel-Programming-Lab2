@@ -23,11 +23,6 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
             if (delay > max) { max = delay; }
             if (delay < min) { min = delay; }
             average = (average * counter + delay) / (counter+1);
-//            if (counter == 0) {
-//                average = delay;
-//            } else {
-//                average = (average * counter + delay) / (counter+1);
-//            }
             counter++;
         }
         if (counter != 0) {

@@ -1,7 +1,6 @@
 package ParallelProgrammingLab2;
 
 import org.apache.hadoop.io.*;
-import org.apache.hadoop.mapreduce.Partitioner;
 
 import java.io.DataInput;
 import java.io.DataOutput;

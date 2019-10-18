@@ -1,7 +1,6 @@
 package ParallelProgrammingLab2;
 
 public class ParseUtils {
-
     private static final Integer FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER = 14;
     private static final Integer FLIGHTS_LOG_DELAY_PARAM_NUMBER = 17;
 
