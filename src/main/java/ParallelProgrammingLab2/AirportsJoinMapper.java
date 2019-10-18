@@ -12,7 +12,7 @@ public class AirportsJoinMapper extends Mapper<LongWritable, Text, TextPair, Tex
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] parsedAirportsListLine = ParseUtils.ParseAirportsListLine(value.toString());
-        if (key.get() > 1) {
+        if (key.get() > 0) {
             TextPair outKey = new TextPair(
                     Integer.parseInt(parsedAirportsListLine[0]), (byte)0);
             context.write(outKey, new Text(parsedAirportsListLine[1]));

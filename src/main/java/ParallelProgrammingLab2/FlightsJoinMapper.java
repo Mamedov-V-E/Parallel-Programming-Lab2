@@ -12,7 +12,7 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] parsedFlightsLogLine = ParseUtils.ParseFlightsLogLine(value.toString());
-        if (key.get() > 1) {
+        if (key.get() > 0) {
             if (parsedFlightsLogLine[1].isEmpty()) {
                 System.out.println("Пустая строка в качестве кода аеропорта в строке " + key.get());
             } else {
