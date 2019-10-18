@@ -27,8 +27,9 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
             sum += delay;
             counter++;
         }
-        average = sum / counter;
+
         if (counter != 0) {
+            average = sum / counter;
             context.write(new IntWritable(key.getAirportId()), new Text(airportName + "\t" + min + "\t" + max + "\t" + average));
         }
     }
