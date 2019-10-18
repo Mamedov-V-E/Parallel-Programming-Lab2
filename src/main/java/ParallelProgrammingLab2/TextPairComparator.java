@@ -2,7 +2,7 @@ package ParallelProgrammingLab2;
 
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
-import org.apache.nutch.
+import org.apache.nutch.crawl;
 
 public class TextPairComparator extends WritableComparator {
     @Override
