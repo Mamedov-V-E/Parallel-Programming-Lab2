@@ -3,8 +3,6 @@ package ParallelProgrammingLab2;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
-import java.io.IOException;
-
 public class TextPairComparator extends WritableComparator {
     protected TextPairComparator() {
         super(TextPair.class);
