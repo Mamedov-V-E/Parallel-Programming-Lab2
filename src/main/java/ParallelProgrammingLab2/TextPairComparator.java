@@ -10,7 +10,7 @@ public class TextPairComparator extends WritableComparator {
 
     @Override
     public int compare(WritableComparable a, WritableComparable b) {
-        return b.compareTo(a);
+        return a.compareTo(b);
     }
 
 //    @Override
