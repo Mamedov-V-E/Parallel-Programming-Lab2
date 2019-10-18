@@ -8,7 +8,10 @@ public class ParseUtils {
     public static final String AIRPORTS_AIRPORT_ID_COLUMN_NAME = "Code";
 
     static String[] ParseFlightsLogLine (String line) {
-        String[] parameters = line.replaceAll("\"", "").split(",");
+        String[] parameters = line.split(",");
+        for (String p : parameters) {
+            p.replaceAll("\"", "");
+        }
 //        if (parameters[FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER].equals(FLIGHTS_LOG_AIRPORT_ID_COLUMN_NAME)) {
 //            return new String[] {};
 //        }
@@ -17,7 +20,7 @@ public class ParseUtils {
     }
 
     static String[] ParseAirportsListLine (String line) {
-        String[] parameters = line.split("\",\"");
+        String[] parameters = line.split(",");
         for (String p : parameters) {
             p.replaceAll("\"", "");
         }
