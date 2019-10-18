@@ -15,11 +15,12 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
         if (key.get() > 1) {
             if (parsedFlightsLogLine[0].isEmpty()) {
                 System.out.println("Пустая строка в качестве кода аеропорта в строке " + key.get());
-            }
-            TextPair outKey = new TextPair(
-                    Integer.parseInt(parsedFlightsLogLine[0]), (byte)1);
-            if (Double.parseDouble(parsedFlightsLogLine[1]) > 0) {
-                context.write(outKey, new Text(parsedFlightsLogLine[1]));
+            } else {
+                TextPair outKey = new TextPair(
+                        Integer.parseInt(parsedFlightsLogLine[0]), (byte)1);
+                if (Double.parseDouble(parsedFlightsLogLine[1]) > 0) {
+                    context.write(outKey, new Text(parsedFlightsLogLine[1]));
+                }
             }
         }
     }
