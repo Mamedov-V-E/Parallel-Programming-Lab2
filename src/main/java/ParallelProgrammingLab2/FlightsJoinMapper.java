@@ -22,6 +22,8 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
                     context.write(outKey, new Text(parsedFlightsLogLine[1]));
                 }
             }
+        } else {
+            System.out.println("Заголовочная строка" + parsedFlightsLogLine[1]);
         }
     }
 }
