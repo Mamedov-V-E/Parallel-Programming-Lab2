@@ -17,7 +17,7 @@ public class ParseUtils {
     }
 
     static String[] ParseAirportsListLine (String line) {
-        String[] parameters = line.replaceAll("\"", "").split(",");
+        String[] parameters = line.split("\",\"");
 //        if (parameters[0].equals(AIRPORTS_AIRPORT_ID_COLUMN_NAME)) {
 //            return new String[] {};
 //        }
