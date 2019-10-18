@@ -21,19 +21,19 @@ public class TextPair implements WritableComparable<TextPair> {
         this.dataIdentifier = dataIdentifier;
     }
 
-    public IntWritable getAirportId() {
+    public Integer getAirportId() {
         return this.airportId;
     }
 
-    public ByteWritable getDataIdentifier() {
+    public Byte getDataIdentifier() {
         return this.dataIdentifier;
     }
 
-    public void setAirportId(IntWritable airportId) {
+    public void setAirportId(Integer airportId) {
         this.airportId = airportId;
     }
 
-    public void setDataIdentifier(ByteWritable dataIdentifier) {
+    public void setDataIdentifier(Byte dataIdentifier) {
         this.dataIdentifier = dataIdentifier;
     }
 
@@ -46,12 +46,12 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public void readFields(DataInput in) throws IOException {
-        airportId.readFields(in);
-        dataIdentifier.readFields(in);
+        this.airportId = in.readInt()
+        this.dataIdentifier = in.readByte();
     }
 
     public void write(DataOutput out) throws IOException {
-        airportId.write(out);
-        dataIdentifier.write(out);
+        out.writeInt(this.airportId);
+        out.writeByte(this.dataIdentifier);
     }
 }
