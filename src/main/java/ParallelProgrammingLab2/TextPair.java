@@ -46,7 +46,7 @@ public class TextPair implements WritableComparable<TextPair> {
     }
 
     public void readFields(DataInput in) throws IOException {
-        this.airportId = in.readInt()
+        this.airportId = in.readInt();
         this.dataIdentifier = in.readByte();
     }
 
