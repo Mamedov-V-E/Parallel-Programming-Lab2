@@ -14,12 +14,12 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
         Iterator<Text> iter = values.iterator();
         Text airportName = new Text(iter.next());
 
-        long min = Long.MAX_VALUE;
-        long max = Long.MIN_VALUE;
+        double min = Long.MAX_VALUE;
+        double max = Long.MIN_VALUE;
         double average = 0;
         long counter = 0;
         while (iter.hasNext()) {
-            long delay = Long.parseLong(iter.next().toString());
+            double delay = Double.parseDouble(iter.next().toString());
             if (delay > max) { max = delay; }
             if (delay < min) { min = delay; }
             average = (average * counter + delay) / (counter+1);

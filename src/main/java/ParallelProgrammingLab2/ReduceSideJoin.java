@@ -25,8 +25,8 @@ public class ReduceSideJoin {
         job.setGroupingComparatorClass(TextPairComparator.class);
         job.setReducerClass(JoinReducer.class);
 
-        job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
+        job.setOutputKeyClass(TextPair.class);
+        job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }

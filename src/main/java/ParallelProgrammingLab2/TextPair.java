@@ -8,15 +8,15 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class TextPair implements WritableComparable<TextPair> {
-    private IntWritable airportId;
-    private ByteWritable dataIdentifier;
+    private Integer airportId;
+    private Byte dataIdentifier;
 
     public TextPair() {
-        this.airportId = new IntWritable(0);
-        this.dataIdentifier = new ByteWritable((byte)0);
+        this.airportId = 0;
+        this.dataIdentifier = 0;
     }
 
-    public TextPair(IntWritable airportId, ByteWritable dataIdentifier) {
+    public TextPair(Integer airportId, Byte dataIdentifier) {
         this.airportId = airportId;
         this.dataIdentifier = dataIdentifier;
     }
