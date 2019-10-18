@@ -5,7 +5,7 @@ import org.apache.hadoop.io.WritableComparator;
 
 public class TextPairComparator extends WritableComparator {
     protected TextPairComparator() {
-        super(TextPair.class);
+        super(TextPair.class, true);
     }
 
     @Override
