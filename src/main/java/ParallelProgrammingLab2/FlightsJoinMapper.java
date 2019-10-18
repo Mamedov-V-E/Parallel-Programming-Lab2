@@ -13,6 +13,9 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] parsedFlightsLogLine = ParseUtils.ParseFlightsLogLine(value.toString());
         if (key.get() > 1) {
+            if (parsedFlightsLogLine[0].isEmpty()) {
+                System.out.println("Пустая строка в качестве кода аеропорта в строке " + key.get());
+            }
             TextPair outKey = new TextPair(
                     Integer.parseInt(parsedFlightsLogLine[0]), (byte)1);
             if (Double.parseDouble(parsedFlightsLogLine[1]) > 0) {
