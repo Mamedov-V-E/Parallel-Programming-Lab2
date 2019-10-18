@@ -30,7 +30,7 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
                 TextPair outKey = new TextPair(
                         Integer.parseInt(parsedFlightsLogLine[0]), (byte)1);
                 if (Double.parseDouble(parsedFlightsLogLine[1]) > 0) {
-                    context.write(outKey, new T ext(parsedFlightsLogLine[1]));
+                    context.write(outKey, new Text(parsedFlightsLogLine[1]));
                 }
             }
         }
