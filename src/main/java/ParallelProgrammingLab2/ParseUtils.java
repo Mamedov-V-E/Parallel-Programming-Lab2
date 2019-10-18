@@ -14,6 +14,6 @@ public class ParseUtils {
 
     static String[] ParseAirportsListLine (String line) {
         //String[] parameters = line.split("\",\"");
-        return line.split("\",\"");
+        return line.replaceAll("\"", "").split(",");
     }
 }
