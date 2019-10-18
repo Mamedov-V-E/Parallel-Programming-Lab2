@@ -6,6 +6,6 @@ import org.apache.hadoop.io.WritableComparator;
 public class TextPairComparator extends WritableComparator {
     @Override
     public int compare(WritableComparable a, WritableComparable b) {
-        return a.compareTo(b);
+        return ((TextPair)a).compareTo((TextPair)b);
     }
 }
