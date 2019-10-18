@@ -38,7 +38,7 @@ public class TextPair implements WritableComparable<TextPair> {
 
     @Override
     public int compareTo(TextPair pair) {
-        return this.airportId.toString().compareTo(pair.airportId.toString());
+        return this.airportId.compareTo(pair.airportId);
     }
 
     @Override
