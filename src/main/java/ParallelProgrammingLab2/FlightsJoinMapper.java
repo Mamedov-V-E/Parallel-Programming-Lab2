@@ -17,7 +17,8 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
                         Integer.parseInt(parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER]),
                         ParseUtils.FLIGHTS_LOG_CODE);
                 if (Double.parseDouble(parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_DELAY_PARAM_NUMBER]) > 0) {
-                    context.write(outKey, new Text(parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_DELAY_PARAM_NUMBER]));
+                    context.write(outKey,
+                            new Text(parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_DELAY_PARAM_NUMBER]));
                 }
             }
         }
