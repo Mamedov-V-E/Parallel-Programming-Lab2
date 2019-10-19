@@ -14,8 +14,8 @@ public class JoinReducer extends Reducer<TextPair, Text, IntWritable, Text> {
         Iterator<Text> iter = values.iterator();
         Text airportName = new Text(iter.next());
 
-        double min = Long.MAX_VALUE;
-        double max = Long.MIN_VALUE;
+        double min = Double.MAX_VALUE;
+        double max = Double.MIN_VALUE;
         double average = 0;
         double sum = 0;
         long counter = 0;
