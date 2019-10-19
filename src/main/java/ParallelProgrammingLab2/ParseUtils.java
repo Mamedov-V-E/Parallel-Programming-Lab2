@@ -15,8 +15,8 @@ public class ParseUtils {
 
     private static String[] ParseCSVLine(String line, String delimiter) {
         String[] parameters = line.split(delimiter);
-        for (String p : parameters) {
-            p = p.replaceAll("\"", "");
+        for (int i = 0; i < parameters.length; ++i) {
+            parameters[i] = parameters[i].replaceAll("\"", "");
         }
         return parameters;
     }
