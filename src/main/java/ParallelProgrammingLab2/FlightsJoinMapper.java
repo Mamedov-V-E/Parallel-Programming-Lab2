@@ -10,12 +10,14 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] parsedFlightsLogLine = ParseUtils.ParseFlightsLogLine(value.toString());
+
         if (key.get() != ParseUtils.FLIGHTS_LOG_HEADER_LINE_NUMBER) {
-            if (!parsedFlightsLogLine[1].isEmpty()){
+            if (!parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_DELAY_PARAM_NUMBER].isEmpty()){
                 TextPair outKey = new TextPair(
-                        Integer.parseInt(parsedFlightsLogLine[0]), ParseUtils.FLIGHTS_LOG_CODE);
-                if (Double.parseDouble(parsedFlightsLogLine[1]) > 0) {
-                    context.write(outKey, new Text(parsedFlightsLogLine[1]));
+                        Integer.parseInt(parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER]),
+                        ParseUtils.FLIGHTS_LOG_CODE);
+                if (Double.parseDouble(parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_DELAY_PARAM_NUMBER]) > 0) {
+                    context.write(outKey, new Text(parsedFlightsLogLine[ParseUtils.FLIGHTS_LOG_DELAY_PARAM_NUMBER]));
                 }
             }
         }
