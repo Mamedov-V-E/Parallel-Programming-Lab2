@@ -5,23 +5,16 @@ public class ParseUtils {
     private static final Integer FLIGHTS_LOG_DELAY_PARAM_NUMBER = 17;
 
     static String[] ParseFlightsLogLine (String line) {
-        String[] parameters = line.split(",");
-        for (int i = 0; i < parameters.length; ++i) {
-            parameters[i] = parameters[i].replaceAll("\"", "");
-        }
+        String[] parameters = ParseCSVLine(line, ",");
         return new String[] {parameters[FLIGHTS_LOG_AIRPORT_ID_PARAM_NUMBER], parameters[FLIGHTS_LOG_DELAY_PARAM_NUMBER]};
     }
 
     static String[] ParseAirportsListLine (String line) {
-        String[] parameters = line.split("\",\"");
-        for (int i = 0; i < parameters.length; ++i) {
-            parameters[i] = parameters[i].replaceAll("\"", "");
-        }
-        return parameters;
+        return ParseCSVLine(line, "\",\"");
     }
 
-    private static String[] ParseCSVLine(String line, String devider) {
-        String[] parameters = line.split(",");
+    private static String[] ParseCSVLine(String line, String delimiter) {
+        String[] parameters = line.split(delimiter);
         for (String p : parameters) {
             p = p.replaceAll("\"", "");
         }
