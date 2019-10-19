@@ -7,6 +7,8 @@ public class ParseUtils {
     private static final String AIRPORTS_LIST_DELIMITER = "\",\"";
     public static final Integer AIRPORTS_LIST_HEADER_LINE_NUMBER = 0;
     public static final Integer FLIGHTS_LOG_HEADER_LINE_NUMBER = 0;
+    public static final Byte AIRPORTS_LIST_CODE = 0;
+    public static final Byte FLIGHTS_LOG_CODE = 1;
 
     static String[] ParseFlightsLogLine (String line) {
         String[] parameters = ParseCSVLine(line, FLIGHTS_LOG_DELIMITER);

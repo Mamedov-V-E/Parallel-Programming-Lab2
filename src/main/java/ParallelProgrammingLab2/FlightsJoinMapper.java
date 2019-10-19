@@ -13,7 +13,7 @@ public class FlightsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
         if (key.get() != ParseUtils.FLIGHTS_LOG_HEADER_LINE_NUMBER) {
             if (!parsedFlightsLogLine[1].isEmpty()){
                 TextPair outKey = new TextPair(
-                        Integer.parseInt(parsedFlightsLogLine[0]), (byte)1);
+                        Integer.parseInt(parsedFlightsLogLine[0]), ParseUtils.FLIGHTS_LOG_CODE);
                 if (Double.parseDouble(parsedFlightsLogLine[1]) > 0) {
                     context.write(outKey, new Text(parsedFlightsLogLine[1]));
                 }
