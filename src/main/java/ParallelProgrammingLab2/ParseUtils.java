@@ -20,11 +20,11 @@ public class ParseUtils {
         return parameters;
     }
 
-//    private static String[] ParseCSVLine(String line) {
-//        String[] parameters = line.split(",");
-//        for (String p : parameters) {
-//            p = p.replaceAll("\"", "");
-//        }
-//        return parameters;
-//    }
+    private static String[] ParseCSVLine(String line, String devider) {
+        String[] parameters = line.split(",");
+        for (String p : parameters) {
+            p = p.replaceAll("\"", "");
+        }
+        return parameters;
+    }
 }
